@@ -1,17 +1,17 @@
-const name=document.getElementById("namevar");
-const email=document.getElementById("emailvar");
-const mobile=document.getElementById("mobilevar");
-const message=document.getElementById("messagevar");
-const sendmessage=document.getElementById("summit");
+const namevar=document.getElementById("namevar");
+const emailvar=document.getElementById("emailvar");
+const mobilevar=document.getElementById("mobilevar");
+const subjectvar=document.getElementById("subjectvar");
+const summit=document.getElementById("summit");
 
 const database=firebase.database();
 
-sendmessage.addEventListener("click",(e) =>{
+summit.addEventListener("click",(e) =>{
     e.preventDefault();
     database.ref("/users/"+ namevar.value).set({
-        name:namevar.value,
-        email:emailvar.value,
-        mobile:mobilevar.value,
-        summit:summit.value
+        namevar:namevar.value,
+        emailvar:emailvar.value,
+        mobilevar:subjectvar.value,
+        summitvar:summit.value
     });
 });

@@ -173,18 +173,42 @@ companys.anyone want website pleas contact me i offering low cost websites and g
     <p>Lets get in touch. Send me a message:</p>
 
     <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name" id="namevar"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email" id="emailvar"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mobile" required name="Mobile" id="subjectvar"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message" id="messagevar"></p>
       <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" id="summit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
       </p>
     </form>
   <!-- End Contact Section -->
   </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDzmFvy5AozEuOsUh_9mvlugEC6OGCAtz0",
+    authDomain: "about-arjundev-ef7c1.firebaseapp.com",
+    databaseURL: "https://about-arjundev-ef7c1.firebaseio.com",
+    projectId: "about-arjundev-ef7c1",
+    storageBucket: "about-arjundev-ef7c1.appspot.com",
+    messagingSenderId: "203843328684",
+    appId: "1:203843328684:web:4ef1d63f5911121fd91d09",
+    measurementId: "G-ZFPJZ4TD5H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   
     <!-- Footer -->
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">

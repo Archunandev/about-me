@@ -4,7 +4,6 @@ const mobile=document.getElementById("mobilevar");
 const message=document.getElementById("messagevar");
 const sendmessage=document.getElementById("summit");
 
-
 const database=firebase.database();
 
 sendmessage.addEventListener("click",(e) =>{
